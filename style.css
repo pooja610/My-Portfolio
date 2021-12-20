@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar  .logo a{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+/* home styling */
+.home{
+    display: flex;
+    background: url("back5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.home .max-width{
+    margin-right: 50%;
+    margin-left: 0%;
+}
+.home .home-content .text1{
+    font-size: 40px;
+    color: crimson;
+}
+.home .home-content .text2{
+    font-size: 27px;
+}
+.home .home-content .text3{
+    color: rgb(63, 247, 26);
+    font-size: 75px;
+    font-weight: 570;
+    margin-left: -3px;
+}
+
+/*about */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 42%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -13px;
+    color: crimson;
+    font-size: 20px;
+    left: 46%;
+    padding: 5px;
+    background : rgb(255, 255, 255);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content.left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about .about-content .right{
+    width: 65%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.about .about-content .right span{
+    color: crimson;
+    font-weight: 600;
+}
+/*hobbies */
+section{
+    padding: 100px 0;
+}
+.hobbies{
+    font-family: 'Poppins', sans-serif;
+}
+.hobbies .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.hobbies .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    width: 225px;
+    height: 3px;
+    background: #111;
+}
+.hobbies .title span{
+    color: crimson;
+}
+.hobbies .hobbies-content .hobbies-up{
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+.hobbies .hobbies-content .hobbies-pic .column{
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 6px;
+}
+.hobbies .hobbies-content .hobbies-pic .column img{
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    border: black solid thick;
+    border-width: 3px;
+}
+.hobbies-pic::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*contact*/
+.contact{
+    font-family: 'Poppins', sans-serif;
+}
+.contact .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    width: 225px;
+    height: 3px;
+    background: #111;
+}
+.contact .title span{
+    color: crimson;
+}
+.contact .contact-content .row {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 50px;
+}
+.contact .contact-content .row span{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: crimson;
+}
